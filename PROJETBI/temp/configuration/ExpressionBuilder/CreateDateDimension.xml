@@ -1,0 +1,5 @@
+<?xml version="1.1" encoding="UTF-8"?>
+<expression:EMFExpression xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:expression="http:///expression.ecore" id="tMap_1=>" expression="row3.date.getYear()+1900">
+  <variables name="row3.date" value="new Date(&quot;1889-01-01&quot;)" talendType="id_Date" nullable="true"/>
+  <variables name="++context.dateSeq" value="0" talendType="id_Integer"/>
+</expression:EMFExpression>
