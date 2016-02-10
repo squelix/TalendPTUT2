@@ -1,0 +1,61 @@
+<?xml version="1.1" encoding="UTF-8"?>
+<expression:EMFExpression xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:expression="http:///expression.ecore" id="tMap_1=>" expression="row10.name.substring(0, row10.name.indexOf(&quot; &quot;)).trim()">
+  <variables name="row1.id" value="0" talendType="id_Integer"/>
+  <variables name="row1.imdb_id" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row1.title" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row1.adult" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row1.budget" value="null" talendType="id_Double" nullable="true"/>
+  <variables name="row1.overview" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row1.popularity" value="null" talendType="id_Double" nullable="true"/>
+  <variables name="row1.poster_path" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row1.release_date" value="null" talendType="id_Date" nullable="true"/>
+  <variables name="row1.revenue" value="null" talendType="id_Double" nullable="true"/>
+  <variables name="row1.runtime" value="null" talendType="id_Double" nullable="true"/>
+  <variables name="row1.vote_average" value="null" talendType="id_Double" nullable="true"/>
+  <variables name="row1.vote_count" value="null" talendType="id_Integer" nullable="true"/>
+  <variables name="row1.backdrop_path" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row2.idMovie" value="0" talendType="id_Integer"/>
+  <variables name="row2.idVideo" value="null" talendType="id_String"/>
+  <variables name="row2.youtube" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row2.name" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row3.idMovie" value="0" talendType="id_Integer"/>
+  <variables name="row3.idCountry" value="0" talendType="id_Integer"/>
+  <variables name="row3.id" value="0" talendType="id_Integer"/>
+  <variables name="row3.name" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row3.slug" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row4.idMovie" value="0" talendType="id_Integer"/>
+  <variables name="row4.idGenre" value="0" talendType="id_Integer"/>
+  <variables name="row4.id" value="0" talendType="id_Integer"/>
+  <variables name="row4.name" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row5.id_date" value="0" talendType="id_Integer"/>
+  <variables name="row5.date" value="null" talendType="id_Date"/>
+  <variables name="row5.year" value="0" talendType="id_Integer"/>
+  <variables name="row5.quarter" value="0" talendType="id_Integer"/>
+  <variables name="row6.id_country" value="0" talendType="id_Integer"/>
+  <variables name="row6.country" value="null" talendType="id_String"/>
+  <variables name="row6.slug" value="null" talendType="id_String"/>
+  <variables name="row7.id_popularity" value="0" talendType="id_Integer"/>
+  <variables name="row7.popularity" value="0" talendType="id_Double"/>
+  <variables name="row8.id_genre" value="0" talendType="id_Integer"/>
+  <variables name="row8.genre" value="null" talendType="id_String"/>
+  <variables name="row9.idActor" value="null" talendType="id_Integer" nullable="true"/>
+  <variables name="row9.idMovie" value="null" talendType="id_Integer" nullable="true"/>
+  <variables name="row9.character_name" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row9.department" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row9.job" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row10.id" value="0" talendType="id_Integer"/>
+  <variables name="row10.name" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row10.birthdate" value="null" talendType="id_Date" nullable="true"/>
+  <variables name="row10.place_of_birthday" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row10.popularity" value="null" talendType="id_Double" nullable="true"/>
+  <variables name="row10.imdb_id" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row10.bio" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row10.profile_img" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row11.id_people" value="0" talendType="id_Integer"/>
+  <variables name="row11.id_popularity" value="0" talendType="id_Integer"/>
+  <variables name="row11.nom" value="null" talendType="id_String"/>
+  <variables name="row11.prenom" value="null" talendType="id_String"/>
+  <variables name="row11.biography" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row11.country_birth" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row11.photo_path" value="null" talendType="id_String" nullable="true"/>
+</expression:EMFExpression>
