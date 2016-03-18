@@ -1,0 +1,14 @@
+<?xml version="1.1" encoding="UTF-8"?>
+<expression:EMFExpression xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:expression="http:///expression.ecore" id="tMap_1=>" expression="(row1.name.indexOf(&quot; &quot;)!=-1) ? row1.name.substring(0, row1.name.indexOf(&quot; &quot;)).trim() : row1.name">
+  <variables name="row1.id" value="0" talendType="id_Integer"/>
+  <variables name="row1.name" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row1.birthdate" value="null" talendType="id_Date" nullable="true"/>
+  <variables name="row1.place_of_birthday" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row1.popularity" value="null" talendType="id_Double" nullable="true"/>
+  <variables name="row1.imdb_id" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row1.bio" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row1.profile_img" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row2.id_popularity" value="0" talendType="id_Integer"/>
+  <variables name="row2.popularity" value="0" talendType="id_Double"/>
+  <variables name="++context.peopleSeq" value="0" talendType="id_Integer"/>
+</expression:EMFExpression>
