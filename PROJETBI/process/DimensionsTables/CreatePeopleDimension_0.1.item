@@ -208,6 +208,9 @@
       <column comment="" key="false" length="255" name="prenom" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
+      <column comment="" key="false" length="255" name="nom_prenom" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
       <column comment="" key="false" length="65535" name="biography" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
@@ -228,6 +231,7 @@
         <mapperTableEntries name="id_popularity" expression="row2.id_popularity " type="id_Integer"/>
         <mapperTableEntries name="nom" expression="(row1.name.indexOf(&quot; &quot;)!=-1) ? row1.name.substring(row1.name.indexOf(&quot; &quot;)).trim() : &quot;&quot; " type="id_String"/>
         <mapperTableEntries name="prenom" expression="(row1.name.indexOf(&quot; &quot;)!=-1) ? row1.name.substring(0, row1.name.indexOf(&quot; &quot;)).trim() : row1.name " type="id_String"/>
+        <mapperTableEntries name="nom_prenom" expression="row1.name " type="id_String" nullable="true"/>
         <mapperTableEntries name="biography" expression="row1.bio " type="id_String" nullable="true"/>
         <mapperTableEntries name="country_birth" expression="row1.place_of_birthday " type="id_String" nullable="true"/>
         <mapperTableEntries name="photo_path" expression="row1.profile_img " type="id_String" nullable="true"/>
@@ -244,7 +248,7 @@
       </inputTables>
       <inputTables sizeState="INTERMEDIATE" name="row2" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
         <mapperTableEntries name="id_popularity" type="id_Integer"/>
-        <mapperTableEntries name="popularity" expression="row1.popularity " type="id_Double" operator="="/>
+        <mapperTableEntries name="popularity" expression="row1.popularity " type="id_Double" nullable="true" operator="="/>
       </inputTables>
     </nodeData>
   </node>
@@ -290,12 +294,12 @@
       <column comment="" key="true" length="10" name="id_popularity" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="22" name="popularity" nullable="false" pattern="" precision="0" sourceType="DOUBLE" type="id_Double" usefulColumn="true">
+      <column comment="" key="false" length="22" name="popularity" nullable="true" pattern="" precision="0" sourceType="DOUBLE" type="id_Double" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
     </metadata>
   </node>
-  <node componentName="tMysqlOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="640" posY="64">
+  <node componentName="tMysqlOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="576" posY="64">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMysqlOutput_1" show="false"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_1qXvwM86EeWi27CIRfs-MQ" show="false"/>
@@ -350,6 +354,11 @@
       <elementValue elementRef="DELETE_KEY" value="false"/>
       <elementValue elementRef="UPDATABLE" value="true"/>
       <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="nom_prenom"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="biography"/>
       <elementValue elementRef="UPDATE_KEY" value="false"/>
       <elementValue elementRef="DELETE_KEY" value="false"/>
@@ -374,7 +383,7 @@
     <elementParameter field="CHECK" name="SUPPORT_NULL_WHERE" value="false" show="false"/>
     <elementParameter field="TEXT" name="LABEL" value="__TABLE__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata comment="" connector="FLOW" label="people" name="people" type="TABLE">
+    <metadata connector="FLOW" label="people" name="tMysqlOutput_1">
       <column comment="" key="true" length="10" name="id_people" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
@@ -385,6 +394,9 @@
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="255" name="prenom" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="nom_prenom" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="65535" name="biography" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
@@ -408,6 +420,9 @@
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="255" name="prenom" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="nom_prenom" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="65535" name="biography" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">

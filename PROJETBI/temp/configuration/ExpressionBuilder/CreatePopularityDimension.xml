@@ -1,0 +1,18 @@
+<?xml version="1.1" encoding="UTF-8"?>
+<expression:EMFExpression xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:expression="http:///expression.ecore" id="tMap_1=>" expression="(row1.popularity != 0.0) ? row1.popularity : null">
+  <variables name="row1.id" value="0" talendType="id_Integer"/>
+  <variables name="row1.imdb_id" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row1.title" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row1.adult" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row1.budget" value="null" talendType="id_Double" nullable="true"/>
+  <variables name="row1.overview" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row1.popularity" value="null" talendType="id_Double" nullable="true"/>
+  <variables name="row1.poster_path" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row1.release_date" value="null" talendType="id_Date" nullable="true"/>
+  <variables name="row1.revenue" value="null" talendType="id_Double" nullable="true"/>
+  <variables name="row1.runtime" value="null" talendType="id_Double" nullable="true"/>
+  <variables name="row1.vote_average" value="null" talendType="id_Double" nullable="true"/>
+  <variables name="row1.vote_count" value="null" talendType="id_Integer" nullable="true"/>
+  <variables name="row1.backdrop_path" value="null" talendType="id_String" nullable="true"/>
+  <variables name="++context.popularitySeq" value="0" talendType="id_Integer"/>
+</expression:EMFExpression>

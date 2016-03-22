@@ -1,5 +1,5 @@
 <?xml version="1.1" encoding="UTF-8"?>
-<expression:EMFExpression xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:expression="http:///expression.ecore" id="tMap_1=>" expression="(row10?name != null) ? ((row10.name.indexOf(&quot; &quot;)!=-1) ? row10.name.substring(row10.name.indexOf(&quot; &quot;)).trim() : &quot;&quot;) : &quot;&quot;">
+<expression:EMFExpression xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:expression="http:///expression.ecore" id="tMap_1=>" expression="row9.job == null ? &quot;Actor&quot; : row9.job">
   <variables name="row1.id" value="0" talendType="id_Integer"/>
   <variables name="row1.imdb_id" value="null" talendType="id_String" nullable="true"/>
   <variables name="row1.title" value="null" talendType="id_String" nullable="true"/>
@@ -14,6 +14,8 @@
   <variables name="row1.vote_average" value="null" talendType="id_Double" nullable="true"/>
   <variables name="row1.vote_count" value="null" talendType="id_Integer" nullable="true"/>
   <variables name="row1.backdrop_path" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row12.id_movie_name" value="0" talendType="id_Integer"/>
+  <variables name="row12.movie_name" value="null" talendType="id_String" nullable="true"/>
   <variables name="row2.idMovie" value="0" talendType="id_Integer"/>
   <variables name="row2.idVideo" value="null" talendType="id_String"/>
   <variables name="row2.youtube" value="null" talendType="id_String" nullable="true"/>
@@ -35,7 +37,7 @@
   <variables name="row6.country" value="null" talendType="id_String"/>
   <variables name="row6.slug" value="null" talendType="id_String"/>
   <variables name="row7.id_popularity" value="0" talendType="id_Integer"/>
-  <variables name="row7.popularity" value="0" talendType="id_Double"/>
+  <variables name="row7.popularity" value="null" talendType="id_Double" nullable="true"/>
   <variables name="row8.id_genre" value="0" talendType="id_Integer"/>
   <variables name="row8.genre" value="null" talendType="id_String"/>
   <variables name="row9.idActor" value="null" talendType="id_Integer" nullable="true"/>
@@ -55,6 +57,7 @@
   <variables name="row11.id_popularity" value="0" talendType="id_Integer"/>
   <variables name="row11.nom" value="null" talendType="id_String"/>
   <variables name="row11.prenom" value="null" talendType="id_String"/>
+  <variables name="row11.nom_prenom" value="null" talendType="id_String" nullable="true"/>
   <variables name="row11.biography" value="null" talendType="id_String" nullable="true"/>
   <variables name="row11.country_birth" value="null" talendType="id_String" nullable="true"/>
   <variables name="row11.photo_path" value="null" talendType="id_String" nullable="true"/>
